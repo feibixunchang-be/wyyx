@@ -1,98 +1,56 @@
-// 变量 $+变量名
-$w:400px;
-$h:200px;
-$c:red;
-$len:50%*10; // 500%
-/* 标题样式 */
-h1{
-  width: $w;
-  height: $h;
-  color: $c;
-  background-color: #ccc;
+.contian{
+  width: 1090px;
+  margin: 0 auto;
 }
-
-// sass中的注释有两种
-// 1. // sass有的注释，不会被编译到css文件中
-// /* xxx */ 会被编译到css文件中
-
-// 嵌套语法
-.box{
-  width: $w;
-  background-color: lightblue;
-  h2{
-    font-size: 30px;
-    color: blue;
-  }
-  .show{
-    width: 300px;
-    height: 100px;
-    span{
-      color: red;
+#top{
+  width: 100%;
+  height: 36px;
+  background: #333333;
+  position: relative;
+  .inner_top{
+    height: 36px;
+    line-height: 36px;
+    background: #333333;
+    .menu_left{
+      font-size: 12px;
+      float: left;
+      a{
+      color: #cc9756;
+      }
     }
-    p{
-      color: yellow;
+    .menu_right{
+      float: right;
+      font-size: 12px;
+      span{
+          display: inline-block;
+          width: 1px;
+          height: 16px;
+          background: #5c5c5c;
+          position: absolute;
+          top: 11px;
+        };
+      a{
+        color: #afafaf;
+        margin:0 10px ;
+        
+        i{
+          display: inline-block;
+          border-top: 4px solid  #afafaf;
+          border-left: 4px solid  #333333;
+          border-right: 4px solid  #333333;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+      }
     }
   }
 }
 
-// & 指向父选择器
-a{
-  color: blue;
-  &:hover{
-    color: red;
-  }
-}
-.content{
-  width: 500px;
-  &-title{
-    color: red;
-  }
-  &-main{
-    color: blue;
-  }
-}
 
-// @import 引入外部样式
-@import 'header.scss';
 
-// @mixin 混合器
-@mixin nostyle {
-  list-style: none;
-  li{
-    padding: 0;
-    color: blue;
-  }
-}
-.list{
-  width: 500px;
-  @include nostyle;
-}
 
-// 混合器传参
-@mixin common($w,$h,$c) {
-  width: $w;
-  height: $h;
-  color: $c;
-}
-.box1{
-  background-color: #ccc;
-  @include common(500px,200px,red);
-}
-.box2{
-  padding: 10px;
-  @include common(300px,100px,blue);
-}
 
-// 继承
-.box3{
-  padding: 20px;
-  margin: 10px;
-  font-size: 20px;
-}
-.box4{
-  width: 500px;
-  background: pink;
-  @extend .box3;
-}
+
+
 
 

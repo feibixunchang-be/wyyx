@@ -4,7 +4,7 @@
 // console.log( process )// {...}
 // console.log( process.argv )// [...]
 // console.log( process.argv[2] )// dev  build ...
-
+// console.log("执行");
 let mode = process.argv[2]
 
 switch(mode){
