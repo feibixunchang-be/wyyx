@@ -2,6 +2,20 @@
   width: 1090px;
   margin: 0 auto;
 }
+/* 精灵图 */
+/* .icons1{
+  display: inline-block;
+  background: url(../img/jinglingtu/icons1.png);
+}
+.icons2{
+  display: inline-block;
+  background: url(../img/jinglingtu/icons2.png);
+}
+.icons3{
+  display: inline-block;
+  background: url(../img/jinglingtu/icons3.png);
+} */
+/* 网页顶部 */
 #top{
   width: 100%;
   height: 36px;
@@ -47,6 +61,58 @@
 }
 
 
+
+
+
+
+
+
+/* 页足 */
+#footer{
+  background: #ffffff;
+  height: 298px;
+  width: 100%;
+  overflow: hidden;
+  .footer_top{
+    margin-top: 60px;
+    margin-bottom: 34px;
+    overflow: hidden;
+    .fttop1,.fttop2{
+      width: 363px;
+      height: 298px;
+      float: left;
+      p{
+        font-size: 16px;
+        line-height: 18px;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 27px;
+      }
+      .serve{
+        overflow: hidden;
+        a{
+          display: block;
+           width: 78px;
+           height: 98px;
+           border: 1px solid #e8e8e8;
+           float: left;
+        }
+        .kf{
+          // display: inline-block;
+          background: url(../img/jinglingtu/icons1.png) no-repeat;
+          width: 32px;
+          height: 30px;
+          background-position: 0 -128px;
+          position: relative;
+        }
+        
+      }
+    }
+    .fttop1{
+      border-right: 1px solid #e9e9e9;
+    }
+  }
+}
 
 
 
