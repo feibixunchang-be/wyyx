@@ -59,12 +59,124 @@
     }
   }
 }
+
 /* 网页头部 */
+#header{
+  height: 106px;
+  background: #ffffff;
+  h2{
+    height: 106px;
+    overflow: hidden;
+    float: left;
+    a{
+      background: url(../img/icons3.png) no-repeat;
+      width: 210px;
+      height: 51px;
+      background-position: -1px -303px;
+      margin: 29px 164px 0 1px;
+      text-indent: -9999px;
+      float: left;
+    }
+  }    
+    form{ 
+      float: left;
+      width: 532px;
+      height: 38px;
+      border: 1px solid #cc9857;
+      border-radius: 19px;
+      overflow: hidden;
+      margin-top: 26px;
+      position: relative;
+      .txt{
+        width: 440px;
+        height: 36px;
+        float: left;
+        border: 0;
+        font-size: 14px;
+        color: #999999;
+        line-height: 36px ;
+        text-indent: 37px;
+      } 
+      .sub{
+        width: 90px;
+        height: 36px;
+        float: left;
+        border: 0;
+        background: #cc9857;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 36px;
+        cursor: pointer;
+      }
+      span{
+        position: absolute;
+        top: 12px;
+        left: 18px;
+        background: url(../img/icons3.png) no-repeat;
+        width: 14px;
+        height: 14px;
+        background-position: 0 -518px;
+      }
+    }
+  
+  .shop{
+    width: 134px;
+    height: 38px;
+    border: 1px solid #cc9857;
+    border-radius: 19px;
+    float: right;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    color:  #cc9857;
+    margin-top: 26px;
+    position: relative;
+    cursor: pointer;
+    span{
+      position: absolute;
+      top: 7px;
+      left: 19px;
+      background: url(../img/icons3.png) no-repeat;
+      width: 19px;
+      height: 22px;
+      background-position: -1px -81px;
+    }
+    i{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #d22a28;
+      border-radius: 50%;
+      top: 10px;
+      right: 16px;
+      line-height: 20px;
+    }
+  }
+}
 
+/* 网页导航 */
+#nav{
+  height: 34px;
+  background: #ffffff;
+  ul{
+    overflow: hidden;
+    display: flex;
+      justify-content: space-between;
+    li{
+      font-size: 14px;
+      color: #000000;
+      font-weight: 600;
+      line-height: 34px;
+      cursor: pointer;
+    }
+    li:hover{
+      color: #cc9756;
+      border-bottom: 3px solid #cc9756;
+    }
+  }
+}
 
-
-
-
+/* 主体内容 */
 
 
 
