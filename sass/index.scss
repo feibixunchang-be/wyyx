@@ -59,6 +59,7 @@
     }
   }
 }
+/* 网页头部 */
 
 
 
@@ -70,16 +71,18 @@
 /* 页足 */
 #footer{
   background: #ffffff;
-  height: 298px;
+  height: 556px;
   width: 100%;
   overflow: hidden;
   .footer_top{
+    height: 204px;
     margin-top: 60px;
     margin-bottom: 34px;
     overflow: hidden;
+    box-sizing: border-box;
     .fttop1,.fttop2{
       width: 363px;
-      height: 298px;
+      height:204px;
       float: left;
       p{
         font-size: 16px;
@@ -90,26 +93,179 @@
       }
       .serve{
         overflow: hidden;
-        a{
-          display: block;
-           width: 78px;
-           height: 98px;
-           border: 1px solid #e8e8e8;
-           float: left;
+        .kf,.fk{
+          width: 78px;
+          height: 98px;
+          border: 1px solid #e8e8e8;
+          float: left; 
+          padding: 25px 0 0 11px ;
+          box-sizing: border-box;
         }
         .kf{
-          // display: inline-block;
-          background: url(../img/jinglingtu/icons1.png) no-repeat;
-          width: 32px;
-          height: 30px;
-          background-position: 0 -128px;
-          position: relative;
+          margin-left: 87px;
+          .kfbg{
+            margin: 0 0 0 13px;
+            display: block;
+            background: url(../img/icons1.png) no-repeat;
+            text-align: center;
+            width: 32px;
+            height: 30px;
+            background-position: 0 -128px;
+            border:0;
+            margin-bottom: 13px;
+          }
+          span{
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+         }
         }
-        
+        .fk{
+          margin-left: 29px;
+          .fkbg{
+            margin: 0 0 0 13px;
+            display: block;
+            background: url(../img/icons2.png) no-repeat;
+            text-align: center;
+            width: 30px;
+            height: 26px;
+            background-position: 0 -98px;
+            border:0;
+            margin-bottom: 17px;
+          }
+          span{
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+         }
+        }
+      }
+      .sespan{
+        display: block;
+        font-size: 13px;
+        line-height: 24px;
+        color: #333333;
+        margin:0 38px  27px;
+      }
+      .lj{
+        height: 32px;
+        overflow: hidden;
+        strong{
+          float: left;
+          margin:0 0 0 38px;
+          font-size: 14px;
+          line-height: 32px;
+        }
       }
     }
     .fttop1{
       border-right: 1px solid #e9e9e9;
+      .g1{
+        background: url(../img/icons2.png) no-repeat;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-position: 0 -326px;
+        float: left;
+        margin-left: 16px;
+      }
+      .g2{
+        background: url(../img/icons2.png) no-repeat;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-position: 0 -428px;
+        float: left;
+        margin-left: 16px;
+      }
+      .g3{
+        background: url(../img/icons2.png) no-repeat;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-position: 0 -470px;
+        float: left;
+        margin-left: 16px;
+      }
+    }
+    .fttop2{
+      width: 362px;
+      .xiazai{
+        display: inline-block;
+        margin-left: 119px;
+        color: #b4a078;
+      }
+      img{
+        margin-left: 129px;
+        margin-bottom: 11px;
+      }
+    }
+  }
+  .footer_bottom{
+    height: 268px;
+    background: #414141;
+    .msg{
+      height: 119px;
+      border-bottom: 1px solid #4f4f4f;
+      margin-bottom: 18px;
+      ul{
+        overflow: hidden;
+        span{
+          line-height: 120px;
+          font-size: 18px;
+          color: #ffffff;
+          float: left;
+        }
+        .msg1{
+          background: url(../img/icons2.png) no-repeat;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+          background-position: 0 -134px;
+          float: left;
+          margin:37px 18px 0 17px;
+          cursor: pointer;
+        }
+        .msg2{
+          background: url(../img/icons2.png) no-repeat;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+          background-position: 0 -368px;
+          float: left;
+          margin:37px 18px 0 122px;
+        }
+        .msg3{
+          background: url(../img/icons2.png) no-repeat;
+          text-align: center;
+          width: 51px;
+          height: 50px;
+          background-position: 0 0;
+          float: left;
+          margin:37px 18px 0 122px;
+        }
+        .msg4{
+          background: url(../img/icons2.png) no-repeat;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+          background-position: 0 -194px;
+          float: left;
+          margin:37px 18px 0 122px;
+        }
+      }
+    }
+    p{
+      text-align: center;
+      font-size: 12px;
+      color:#999999 ;
+      line-height: 28px;
+      a{
+        text-align: center;
+        font-size: 12px;
+        color:#999999 ;
+      line-height: 30px;
+    }
     }
   }
 }
