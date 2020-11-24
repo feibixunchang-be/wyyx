@@ -1,5 +1,5 @@
 /* css reset */
-div,a,body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+div,a,img,body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,6 +65,9 @@ fieldset{
         a{
         color: #cc9756;
         }
+        a:hover{
+        color: #ffffff;
+        }
       }
       .menu_right{
         float: right;
@@ -89,6 +92,10 @@ fieldset{
             vertical-align: middle;
             margin-top: -2px;
           }
+          
+        }
+        .line:hover{
+            color: #ffffff;
         }
       }
     }

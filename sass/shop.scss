@@ -1,0 +1,242 @@
+.shopcar{
+    .discount{
+        height: 40px; 
+        border: 1px solid #eaeaea;
+        margin-bottom: 10px;
+        div{
+            line-height: 40px;
+            text-indent: 56px;
+            float: left;
+        }
+        a{
+            float: right;
+            width: 88px;
+            height: 38px;
+            color: #ffffff;
+            background: #e36844;
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+    .allck{
+        height: 48px;
+        line-height: 48px;
+        background: #f5f5f5;
+        border: solid 1px #dddddd;
+        position: relative;
+        margin-bottom: 20px;
+        span{
+            float: left;
+            font-size: 12px;
+            text-indent: 42px;
+            margin-right: 82px;
+            input{
+                position: absolute;
+                left: 20px;
+                top: 18px;
+                border:  solid 1px #e3e4df;
+            }
+        }
+        strong{
+            float: left;
+            margin-right: 284px;
+        }
+        .danjia{
+            float: left;
+            margin: 0 43px;
+        }
+        .shuliang{
+            float: left;
+            margin: 0 105px;
+        }
+        .xianji{
+            float: left;
+            margin: 0 60px;
+        }
+    }
+    .Add{
+        height: 46px;
+        line-height: 46px;
+        background: #fffbf0;
+        border: solid 1px #dddddd;
+        padding-left: 60px;
+        margin-bottom: 16px;
+        span{
+            display: inline-block;
+            height: 20px;
+            width: 58px;
+            margin-right: 10px;
+            line-height: 20px;
+            font-size: 12px;
+            background: #fe5b45;
+            text-align: center;
+            color: #ffffff;
+        }
+        i{
+            margin-right: 20px;
+        }
+        strong{
+            display: inline-block;
+            height: 24px;
+            width: 66px;
+            margin-right: 10px;
+            line-height: 24px;
+            font-size: 12px;
+            background: #ffffff;
+            border: solid 1px #d4282d;
+            text-align: center;
+            color: #d4282d;
+            cursor: pointer;
+        }
+        a{
+            color: #66b4dc;
+        }
+    }
+    .list{
+        height: 142px;
+        border: solid 1px #dddddd;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        input{
+            float: left;
+            margin: 42px 20px 0 20px ;
+            border:  solid 1px #e3e4df;
+        }
+        div{
+            float: left;
+            
+            span{
+                font-size: 14px;
+                color: #333333;
+                line-height: 34px;
+                display: block;
+                width: 314px;
+            }
+            i{
+                color: #999999;
+            }
+            a{
+                display: block;
+                line-height: 24px;
+            }
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border: solid 1px #eaeaea;
+            background: #f4f4f4;
+            float: left;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .listi1{
+            float: left;
+            width: 112px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .listi2{
+            float: left;
+            width: 184px;
+            line-height: 32px;
+            margin-left: 52px;
+            margin-top: 10px;
+            i{
+                border: solid 1px #dddddd;
+                width: 37px;
+                height: 30px;
+                text-align: center;
+                font-size: 24px;
+                line-height: 30px;
+                float: left;
+                cursor: pointer;
+              }
+              strong{
+                border-top: solid 1px #dddddd;
+                border-bottom: solid 1px #dddddd;
+                width: 62px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                float: left;
+              }
+        }
+        .listi3{
+            float: left;
+            width: 148px;
+            line-height: 32px;
+            text-align: center;
+            color: #d4282d;
+            font-size: 14px;
+        }
+    }
+    .settle{ 
+        height: 70px;
+        line-height: 50px;
+        background: #f5f5f5;
+        border: solid 1px #dddddd;
+        margin-bottom: 30px;
+        input{
+            border:  solid 1px #e3e4df;
+            float: left;
+            margin: 30px 14px 0 20px ;
+        }
+        div{
+            float: left;
+            padding: 10px 0;
+
+        }
+        .settlesp1{
+            margin-right: 8px;
+        }
+        .settlesp2{
+            margin: 0 30px 0 38px;
+        }
+        .settlesp3{
+            margin-right: 198px;
+        }
+        .collect{
+            width: 200px;
+            border-right:1px solid #dddddd ;
+            margin-right: 30px;
+            p{
+                line-height: 26px;
+                color: #999999;
+                font-size: 14px;
+                span{
+                    float: right;
+                    margin-right: 32px;
+                }
+            }
+        }
+        .handle{
+            width: 202px;
+            padding-right: 32px;
+            p{
+                line-height: 26px;
+                span{
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #be4141;
+                    float: right;
+                }
+            }
+            a{
+                color: #be4141;
+                float: right;
+                line-height: 32px;
+            }
+        }
+        .order{
+            float: right;
+            width: 140px;
+            height: 68px;
+            color: #ffffff;
+            background: #b4a078;
+            line-height: 48px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+} 
