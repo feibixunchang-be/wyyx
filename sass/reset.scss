@@ -72,6 +72,80 @@ fieldset{
       .menu_right{
         float: right;
         font-size: 12px;
+        // width: 459px;
+        li{
+            float: left;
+            text-align: center;
+        }
+        .line1:hover div,.line2:hover div,.line3:hover div{
+            display: block;
+        }
+        .line1,.line2{
+            position: relative;
+            div{
+                display: none;
+                position: absolute;
+                left: -2px;
+                top: 36px;
+                width: 80px;
+                background: #ffffff;
+                z-index: 100;
+                border: solid 1px #dddddd;
+                padding: 3px 13px 0;
+                a{
+                    margin: 0;
+                    line-height: 38px;
+                    display: block;
+                    color: #a6a6c4;
+                    border-bottom: 1px solid #dddddd;
+                }
+                a:hover{
+                    color: #cc9756;
+                }
+                .lasta{
+                    border: 0;
+                }
+                strong{
+                    position: absolute;
+                    top: -6px;
+                    left: 34px;
+                    border-bottom: 6px solid  #ffffff;
+                    border-left: 5px solid  #333333;
+                    border-right: 5px solid  #333333;
+                    vertical-align: middle;
+
+                }
+            }
+        }
+        .line3{
+            position: relative;
+            div{
+                display: none;
+                position: absolute;
+                left: -50px;
+                top: 36px;
+                width: 137px;
+                height: 155px;
+                padding: 10px 10px 0 10px;
+                z-index: 10;
+                background: #ffffff;
+                h5{
+                    font-size: 12px;
+                    line-height: 24px;
+                    color: #b4a078;
+                }
+                strong{
+                    position: absolute;
+                    top: -6px;
+                    left: 64px;
+                    border-bottom: 6px solid  #ffffff;
+                    border-left: 5px solid  #333333;
+                    border-right: 5px solid  #333333;
+                    vertical-align: middle;
+                }
+            }
+            
+        }
         span{
             display: inline-block;
             width: 1px;
@@ -94,7 +168,7 @@ fieldset{
           }
           
         }
-        .line:hover{
+        a:hover{
             color: #ffffff;
         }
       }
@@ -199,7 +273,6 @@ fieldset{
   #nav{
     height: 34px;
     background: #ffffff;
-    margin-bottom: 3px;
     ul{
       overflow: hidden;
       display: flex;
@@ -208,7 +281,7 @@ fieldset{
         font-size: 14px;
         color: #000000;
         font-weight: 600;
-        line-height: 34px;
+        line-height: 31px;
         cursor: pointer;
       }
       li:hover{
