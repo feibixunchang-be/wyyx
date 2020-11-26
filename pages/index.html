@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>网易严选首页</title>
 <link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/swiper-bundle.css">
 <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 <!-- 网页顶部 -->
   <div id="top">
     <div class="inner_top contian">
-        <div class="menu_left"><a href="#">关于防止近期不法分子冒充客服实施诈骗的公告</a></div>
+        <div class="menu_left"><img src="../img/topgif.gif" alt=""><a href="#">关于防止近期不法分子冒充客服实施诈骗的公告</a></div>
         <ul class="menu_right">
           <li><a href="#" >登录/注册</a></li>
           <li><span></span><a href="#" >我的订单</a></li>
@@ -31,7 +32,7 @@
               <a href="#">商务合作</a>
               <a href="#" class="lasta">开发平台</a></div>
           </li>
-          <li class="line3"><span></span><a href="#">App</a>
+          <li class="line3"><span></span><b></b><a href="#">App</a>
             <div>
               <strong></strong>
               <a href="#"><img src="../img/ewmtop.png" alt=""></a>
@@ -71,48 +72,7 @@
         <li>众筹</li>
       </ul>
         <div class="navlist clearfix">
-           <div class="nav_bottom clearfix">
-             <h2>口碑好物</h2>
-             <div class="nav_inner">
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="../img/nav.webp" alt="">
-                  <span>口碑好物</span>
-                </a>
-              </div>
-              
-             </div>
-           </div>
+           
            <div class="nav_bottom clearfix">
             <h2>口碑好物</h2>
             <div class="nav_inner">
@@ -326,13 +286,37 @@
       
     </div>
   </div>
+
+
+
 <!-- 广告图 -->
   <div id="banner">
-    <img src="../img/banner.png" alt="">
+    <!-- <img src="../img/banner.png" alt=""> -->
+    <div class="contian">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        
+          <div class="swiper-slide bannerimg"><a href="https://you.163.com/downloadapp"></a></div>
+          <div class="swiper-slide bannerimg banner1"><a href="https://you.163.com/downloadapp"></a></div>
+          <div class="swiper-slide bannerimg banner2"><a href="https://you.163.com/downloadapp"></a></div>
+          <div class="swiper-slide bannerimg banner3"><a href="https://you.163.com/downloadapp"></a></div>
+          <div class="swiper-slide bannerimg banner4"><a href="https://you.163.com/downloadapp"></a></div>
+        
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+      
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    </div>
   </div>
+
 <!-- 主体内容 -->
   <div id="main">
-    <div class="indexSideBar">
+    <div class="contian postion">
+      <div class="indexSideBar">
       <ul>
         <li class="SideBar_top">-热销榜-</li>
         <li><a href="#"><img src="../img/SideBar1.webp" alt=""><span>全站<br>热销榜</span></a></li>
@@ -346,9 +330,11 @@
         <li class="bd"><a href="#"><img src="../img/SideBar9.webp" alt=""><span>全球<br>特色榜</span></a></li>
         
       </ul>
+      </div>
     </div>
+    
     <div class="first contian">
-      <h3 class="H3">
+      <!-- <h3 class="H3">
         <span class="sp">新品首发</span>
         <i class="iii">为你寻觅世间好物</i>
         <a href="#" class="aaa">更多新品></a>
@@ -378,11 +364,11 @@
           <a href="#"  class="h3a ">2020新果上市，南非碧根果仁 150克</a>
           <p class="ppp">￥46</p>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="layout">
       <div class="sentiment contian">
-        <h3 class="H3">
+        <!-- <h3 class="H3">
           <span class="sp">人气推荐</span>
           <i class="iii">编辑推荐</i>
           <i class="iii">热销总榜</i>
@@ -438,27 +424,56 @@
             <p class="ppp">￥500</p>
           </div>
         </div>
-      </div>
-
+      </div> -->
       </div>
     </div>
     <div class="limit contian">
-      <h3 class="H3">
+      <!-- <h3 class="H3">
         <span class="sp">限时购</span>
         <a href="#" class="aaa">更多抢购></a>
       </h3>
-      <div class="limit_left"></div>
+      <div class="limit_left"><img src="../img/xianshiqiangg.png" alt=""></div>
       <div class="limit_right">
         <div class="limitimg">
           <img src="../img/xsg1.webp" alt="">
-          <div>
+          <div class="limit1">
             <span>男士</span>
-            <p>舒适</p>
-            <strong>限时价</strong>
-            <div></div>
+            <strong>舒适</strong>
+            <div class="limit2">
+              <div><div></div></div>
+              <strong>还剩30件</strong>
+            </div>
+            <p>限时价<i>￥121</i></p>
+            <div class="limit3">立即抢购</div>
+          </div>
+        </div>
+        <div class="limitimg">
+          <img src="../img/xsg1.webp" alt="">
+          <div class="limit1">
+            <span>男士</span>
+            <strong>舒适</strong>
+            <div class="limit2">
+              <div><div></div></div>
+              <strong>还剩30件</strong>
+            </div>
+            <p>限时价<i>￥121</i></p>
+            <div class="limit3">立即抢购</div>
           </div>
         </div> 
-      </div>
+        <div class="limitimg">
+          <img src="../img/xsg1.webp" alt="">
+          <div class="limit1">
+            <span>男士</span>
+            <strong>舒适</strong>
+            <div class="limit2">
+              <div><div></div></div>
+              <strong>还剩30件</strong>
+            </div>
+            <p>限时价<i>￥121</i></p>
+            <div class="limit3">立即抢购</div>
+          </div>
+        </div> 
+      </div> -->
     </div>
     <div class="layout Hei">
       <div class="boon contian">
@@ -468,12 +483,12 @@
         </h3>
         <div class="surprise">
           <div class="sp_left">
-            <a href="#"><img src="../img/fls.webp" alt=""></a>
+            <a href="https://act.you.163.com/act/pub/EKRvjFTneSHU.html"><img src="../img/fls.webp" alt=""></a>
           </div>
           <div class="sp_content">
             <h3>
               <span>今日特价</span>
-              <a href="#" class="aaa">更多抢购></a>
+              <a href="#" class="aaa">查看全部></a>
             </h3>
             <div class="flshop">
               <a href="#"><img src="../img/fls11.webp" alt=""></a>
@@ -883,33 +898,115 @@
       </h3>
       <div class="news">
         <div class="new_left">
-          <a href="#"><img src="../img/zxj1.webp" alt=""></a>
+          <a href="http://you.163.com/expert/tryout?_stat_referer=index"><img src="../img/zxj1.webp" alt=""></a>
         </div>
         <div class="new_right">
-          <a href="#"><img src="../img/zxj2.webp" alt=""></a>
-          <a href="#"><img src="../img/zxj3.webp" alt=""></a>
+          <a href="http://you.163.com/expert/advice?_stat_referer=index"><img src="../img/zxj2.webp" alt=""></a>
+          <a href="http://you.163.com/expert/sample?_stat_referer=index"><img src="../img/zxj3.webp" alt=""></a>
         </div>
       </div>
     </div>
     <div class="layout">
-      <div class="everyone contian">
+      <div class="everyone">
+        <div class="">
         <h3 class="H3">
           <span class="sp">甄选家</span>
           <i class="iii">我们在寻找，对生活有态度的你</i>
         </h3>
-        <div class="every">
+        <div class="swiper-container tkmj">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs1.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs1.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs1.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs2.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <!-- <span>面料舒服😌尺寸合适👍买过几条了，老公的裤子就交给严选了！</span> -->
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs1.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <!-- <span>面料舒服😌尺寸合适👍买过几条了，老公的裤子就交给严选了！</span> -->
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+                <div class="every">
+                  <div class="eve">
+                    <a href="#"><img src="../img/djszs1.webp" alt=""></a>
+                    <div class="ser">
+                      <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
+                      <p>加厚加大替代毛巾...<i>￥249</i></p>
+                      <!-- <span>面料舒服😌尺寸合适👍买过几条了，老公的裤子就交给严选了！</span> -->
+                      <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- <div class="every">
+          
           <div class="eve">
             <a href="#"><img src="../img/djszs1.webp" alt=""></a>
             <div class="ser">
               <div>Z***Q&nbsp;&nbsp;&nbsp;<strong>2020-10-25</strong></div>
-              <p>加厚加大替代毛巾...<i>￥249</i></p>
+              <p>加厚加大替代毛巾...<i>￥249</i></p> -->
               <!-- <span>面料舒服😌尺寸合适👍买过几条了，老公的裤子就交给严选了！</span> -->
-              <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
+              <!-- <span>👌很大很厚一卷，包装精美，感觉不比之前买的between差啊，同是90g的，很赞</span>
             </div>
           </div> 
-        </div>
+        </div> -->
+                      <!-- <span>面料舒服😌尺寸合适👍买过几条了，老公的裤子就交给严选了！</span> -->
+
       </div>
     </div>
+  </div>
   </div>
 <!-- 页足 -->
   <footer id="footer" >
@@ -960,6 +1057,11 @@
         </div>
       </div>
   </footer>
-<!-- <script src="./js/index.js"></script> -->
+
+<script src="./js/public.js"></script>
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+
 </body>
 </html>

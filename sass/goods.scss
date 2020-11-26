@@ -22,14 +22,45 @@
     width: 430px;
     margin-right: 40px;
     float: left;
+    position: relative;
     .imgmed{
       width: 430px;
       height: 430px;
       border: 1px solid #e8e8e8;
       margin-bottom: 14px;
+      position: relative;
       img{
         width: 428px;
         height: 428px;
+      }
+      .mask{
+        width: 230px;
+        height: 230px;
+        background-color: #b89f73;
+        opacity: 0.4;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: move;
+        display: none;
+        z-index: 10px;
+      }
+    }
+    .imgnone{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 440px;
+      width: 430px;
+      height: 430px;
+      border: 1px solid #e8e8e8;
+      overflow: hidden; 
+      img{
+        width: 856px;
+        height: 856px;
+        position: absolute;
+        left: 0;
+        top: 0;
       }
     }
     .imgsambox{

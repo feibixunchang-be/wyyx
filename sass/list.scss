@@ -2,6 +2,7 @@
   background: #f5f5f5;
   width: 100%;
   border-top: 2px solid #ebebeb;
+  padding-bottom: 40px;
   .banner{
     margin-bottom: 27px;
     h2{
@@ -72,6 +73,8 @@
     }
     .list_bottom{
       padding-top: 30px;
+      margin: 0 40px;
+
       H3{
         font-size: 24px;
         font-weight: 700;
@@ -86,7 +89,11 @@
         text-align: center;
         margin-bottom: 40px;
       }
-      .bigshop{
+      
+    }
+  }
+}
+ .bigshop{
         width: 1100px;
         overflow: hidden;
       }
@@ -136,6 +143,3 @@
       a:hover{
         color: #cc9756;
       }
-    }
-  }
-} 

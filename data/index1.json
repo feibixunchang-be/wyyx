@@ -1,0 +1,20 @@
+[{
+    "first":{
+        "h3span":"新品首发",
+        "h3i":"为你寻觅世间好物",
+        "h3a":"更多新品"
+    },
+    "firstimg":[
+        {"img1":"../img/xqsf11.webp","img2":"../img/xqsf12.webp"},
+        {"img1":"../img/xqsf21.webp","img2":"../img/xqsf22.webp"},
+        {"img1":"../img/xqsf31.webp","img2":"../img/xqsf32.webp"},
+        {"img1":"../img/xqsf41.webp","img2":"../img/xqsf42.webp"}
+    ],
+    "firstimga":[
+        "2020新果上市，南非碧根果仁 150克",
+        "2全方位防漏经期神器柔肌感经期裤3片/包",
+        "2020新果上市,临安山核桃仁150克",
+        "奶香浓郁四层夹心俄罗斯冰淇淋威化饼干" 
+    ],
+    "firstp":["￥46","￥12.9","￥56.8","￥69"]
+}]
