@@ -1,3 +1,4 @@
+
 .contian{
   width: 1090px;
   margin: 0 auto;
@@ -163,6 +164,9 @@ body,html{
   height: 34px;
   background: #ffffff;
   border-bottom: 1px solid #ececec;
+  position: relative;
+  top: 0;
+  z-index: 100;
   .contian{
     position: relative;
   }
@@ -364,6 +368,8 @@ body,html{
     position: absolute;
     background: #ffffff;
     left: -130px;
+    top: 0;
+    z-index: 100;
 
     ul{
       .SideBar_top{
@@ -586,6 +592,7 @@ body,html{
             display: block; 
             margin-bottom: 7px;
           }
+
           p{
             color: #be4141;
             font-size: 14px;

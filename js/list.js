@@ -84,3 +84,26 @@ $(function(){
         }
       })
 })
+
+
+$((window.onresize = function(){
+  var nav = $1("#nav")
+  var res = document.body.clientWidth;
+  window.onscroll = function(){
+    var scr = document.documentElement.scrollTop;
+    
+    if(scr <= 142){
+      nav.style.position = "relative";
+      nav.style.left =0;
+    }else{
+      nav.style.position = "fixed";
+      nav.style.top =0+"px";
+      nav.style.left =(res-1090)/2+"px";
+    }
+  }
+})()) 
+
+
+
+
+

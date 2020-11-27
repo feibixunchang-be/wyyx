@@ -45,7 +45,8 @@ imgmed.onmouseleave = function (){
 
 
 // 切图
-var imgsam = document.querySelectorAll('.imgsambox .imgsam img')
+$(function(){
+  var imgsam = document.querySelectorAll('.imgsambox .imgsam img')
 var imgmedd = $1(".imgmed img")//minBox
 var imgnonee = $1(".imgnone img")//maxBox
 
@@ -61,19 +62,87 @@ for(var i = 0,len = imgsam.length; i < len; i++ ){
   // prevIndex = this.index
   }
 }
+})
 
-// 请求
-
-/* $.ajax({
-  url:'../data/index2.json',
+// ajax请求
+$.ajax({
+  url:'../data/goods.json',
   type:'get',
   dateType:'json',
   success:function(json){
-    var goodsStr = ''
+    var goodsStr = '';
     $.each(json,function(index,item){
-      goodsStr +=``
+      goodsStr +=`<p class="ptop">${item.goodsrightp[0]}<span>99.5%</span></p>
+                <div class="desc">${item.goodsrightdesc[0]}<a href="#">好评率></a></div>
+                <div class="price">
+                  <span class="jg">价格</span><i class="ipri">${item.goodsrightjg[0]}</i>
+                  <p class="pri1">促销<span>全场换购</span><i>${item.goodsrightpri1[0]}</i></p>
+                  <p class="pri2">购物返<i>最高返</i><strong>${item.goodsrightpri2[0]}</strong><a href="#">?</a></p>
+                  <p class="pri1">邮费<i class="prii1">${item.goodsrightpri3[0]}</i></p>
+                  <p class="pri1">配送<i class="prii1">至</i></p>
+                  <p class="pri3">服务<span >･ ${item.goodsrightpri4[0]}</span><span>･ ${item.goodsrightpri4[1]}</span><span>･ ${item.goodsrightpri4[2]} </span></p>
+                </div>
+                <div class="scale">
+                  <span>规格</span><img src="../img/spxq21.webp" alt="">
+                </div>`
     })
-    $(".sentiment").html(goodsStr)
+    $(".right_inner").html(goodsStr)
   }
-}) */
+})
 
+// 其他
+$(function(){
+ var numstr = $1(".num strong")//img
+var numi = $2(".num i")//img
+// console.log(numstr.innerText);
+var cont =1;
+// console.log(parseInt(numstr.innerText));
+    numi[0].onclick = function(){ 
+      if(numstr.innerText<=1){
+        numstr.innerText = 1
+      }else{
+        cont--;
+        numstr.innerText = cont;
+      };
+    }; 
+    numi[1].onclick = function(){ 
+      cont++;
+      numstr.innerText = cont;
+
+    };    
+  
+})
+
+/* $((window.onresize = function(){
+  var nav = $1("#nav")
+  var res = document.body.clientWidth;
+  window.onscroll = function(){
+    var scr = document.documentElement.scrollTop;
+    
+    if(scr <= 142){
+      nav.style.position = "relative";
+      nav.style.left =0;
+    }else{
+      nav.style.position = "fixed";
+      nav.style.top =0+"px";
+      nav.style.left =(res-1090)/2+"px";
+    }
+  }
+})()) */
+
+$((window.onresize = function(){
+  var nav = $1("#nav")
+  var res = document.body.clientWidth;
+  window.onscroll = function(){
+    var scr = document.documentElement.scrollTop;
+    
+    if(scr <= 142){
+      nav.style.position = "relative";
+      nav.style.left =0;
+    }else{
+      nav.style.position = "fixed";
+      nav.style.top =0+"px";
+      nav.style.left =(res-1090)/2+"px";
+    }
+  }
+})()) 

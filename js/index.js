@@ -1,6 +1,4 @@
-/* document.querySelector('h1').onclick = function (){
-  alert(123);
-}; */
+
 
 /* 轮播图 */
 var mySwiper = new Swiper ('.swiper-container', {
@@ -35,7 +33,119 @@ var mySwiper = new Swiper ('.swiper-container', {
   
 })
 
+//吸顶
+$(function(){
+  /* var ind = $1(".indexSideBar");
+  window.onresize = function(){
+    var res = document.body.clientWidth;
+    if(res <=1340 && res>=1090){
+      ind.style.left =(1090-res)/2+"px" ;
+    }else if(res >1340){
+      ind.style.left =-130+"px" ;
+      ind.style.position = "absolute";
+      if(scr>610){
+        ind.style.position = "fixed";
+      }
+    }
+  }
+  window.onscroll = function(){
+    var scr = document.documentElement.scrollTop;
+    var nav = $1("#nav")
+    if(scr <= 142){
+      nav.style.position = "relative";
+    }else{
+      nav.style.position = "fixed";
+      ind.style.top =0+"px";
+    }
+    if(scr <= 610){
+      ind.style.position = "absolute";
+      ind.style.top =0+"px";
+      ind.style.left =-130+"px" ;
+    }else{
+      ind.style.position = "fixed";
+      ind.style.top =48+"px";
+      if(res>=1340){
+        ind.style.left =(res-1347)/2+"px" ;
+      }
+    }
+  } */
+})
 
+/* $((window.onresize = function(){
+  var nav = $1("#nav")
+  var res = document.body.clientWidth;
+  window.onscroll = function(){
+    var scr = document.documentElement.scrollTop;
+    
+    if(scr <= 142){
+      nav.style.position = "relative";
+      nav.style.left =0;
+    }else{
+      nav.style.position = "fixed";
+      nav.style.top =0+"px";
+      nav.style.left =(res-1090)/2+"px";
+    }
+  }
+})()) */
+
+$((window.onresize = function(){
+  var ind = $1(".indexSideBar");
+  var nav = $1("#nav")
+  var res = document.body.clientWidth;
+  /* if(res >1090){
+    nav.style.position = "fixed";
+    nav.style.left =(res-1090)/2+"px";
+  }else{
+    nav.style.position = "fixed";
+    nav.style.top =0+"px";
+    
+  } */
+  window.onscroll = function(){
+    
+    var scr = document.documentElement.scrollTop;
+    if(res >=1340){
+      if(scr <=552){
+        ind.style.position = "absolute";
+        ind.style.top =0+"px";
+        ind.style.left =-130+"px" 
+      }else{
+        ind.style.position = "fixed";
+        ind.style.top =48+"px";
+        ind.style.left =(res-1347)/2+"px"
+      } 
+    }if(res <=1340){
+      if(scr <=552){
+        ind.style.position = "absolute";
+        ind.style.top =0+"px";
+        ind.style.left =0+"px" 
+      }else{
+        ind.style.position = "fixed";
+        ind.style.top =48+"px";
+        ind.style.left =0+"px" 
+
+      }
+    }
+    /* if(scr <=610 && res >=1340){
+      ind.style.position = "absolute";
+      ind.style.top =0+"px";
+      ind.style.left =-130+"px" ;
+    }else if(scr>610 && res >=1340 ){
+      ind.style.position = "fixed";
+      ind.style.top =48+"px";
+      ind.style.left =(res-1347)/2+"px"
+    } */
+    if(scr <= 142){
+      nav.style.position = "relative";
+      nav.style.left =0;
+    }else{
+      nav.style.position = "fixed";
+      nav.style.top =0+"px";
+      nav.style.left =(res-1090)/2+"px";
+    }
+    
+
+  }
+})())
 
 
 $(function(){
